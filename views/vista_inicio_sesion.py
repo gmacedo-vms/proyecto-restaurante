@@ -1,9 +1,11 @@
+from utils.terminal import limpiar_consola_alt
 from modules.incio_sesion import validar_usuario
 from views.vista_principal import mostrar_menu
 
 import getpass
 
 def iniciar_sesion():
+    limpiar_consola_alt()
 
     while True:
         print('\n\n=== Inicio de sesión ===')
