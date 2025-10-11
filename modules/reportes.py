@@ -5,12 +5,12 @@ import os
 
 # Obtener la ruta base del proyecto
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATO_DIR = os.path.join(BASE_DIR, 'dato') # -> .../proyecto-restaurante/dato/
+DATA_DIR = os.path.join(BASE_DIR, 'data') # -> .../proyecto-restaurante/data/
 
 # Las rutas completas que usarás
-PEDIDOS_PATH = os.path.join(DATO_DIR, 'Pedidos.csv')
-MENU_PATH = os.path.join(DATO_DIR, 'Menu.csv')
-MESEROS_PATH = os.path.join(DATO_DIR, 'Meseros.csv')
+PEDIDOS_PATH = os.path.join(DATA_DIR, 'Pedidos.csv')
+MENU_PATH = os.path.join(DATA_DIR, 'Menu.csv')
+MESEROS_PATH = os.path.join(DATA_DIR, 'Meseros.csv')
 
 def ReporteporFecha():
     # Reporte por fecha
