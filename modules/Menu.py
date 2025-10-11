@@ -13,10 +13,11 @@ class Menu:
                 csv_reader = csv.reader(csv_file)
                 next(csv_reader)
                 for fila in csv_reader:
-                    _ , nombre , descripcion , precio = fila
+                    id , nombre , descripcion , precio = fila
                     try:
+                        id = int(id)
                         precio = float(precio)
-                        plato = Plato(nombre, descripcion , precio)
+                        plato = Plato(id, nombre, descripcion , precio)
                         platos.append(plato)
                     except ValueError:
                         print(f"Error: al añadir el plato")
