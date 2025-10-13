@@ -1,6 +1,7 @@
 import csv
 from modules.Plato import Plato
-
+from utils.styles import Estilos
+from utils.terminal import longitud_sin_ansi
 
 class Menu:
     def __init__(self , platos_csv="data/platos.csv") -> None:
@@ -27,8 +28,41 @@ class Menu:
             return []
         return platos
 
-    def mostrar_menu(self):
-        print("--- MENU DEL RESTAURANTE ---")
-        for i , plato in enumerate(self.platos):
-            print(f"[{i + 1}] {plato.nombre} - {plato.precio:.2f}")
-            print(f"\t{plato.descripcion}")
+    def get_platos(self):
+        return self.platos
+
+    def mostrar_menu(self , carrito_pedido):
+        # carrito_pedido = []
+        ancho_menu = 45 
+        ancho_pedido = 30
+        separacion = 5
+
+        titulo_menu = "MENU DEL RESTAURANTE"
+        titulo_pedido = "TU PEDIDO"
+
+        print(f"{Estilos.TITULO}{titulo_menu.center(ancho_menu)}{' '*separacion}{titulo_pedido.center(ancho_pedido)}{Estilos.NORMAL}")
+        print(f"{Estilos.TITULO}{'='*ancho_menu}{' '*separacion}{'='*ancho_pedido}{Estilos.NORMAL}")
+        print()
+
+        menu_opciones = list(self.platos)
+        lineas_pedido = [f"{Estilos.CIAN}- {p.nombre}{Estilos.NORMAL}" for p in carrito_pedido]
+
+
+        for i in range(max(len(self.platos) , len(carrito_pedido))):
+            menu_linea = ""
+            if i < len(menu_opciones):
+                nombre = self.platos[i].nombre
+                precio = self.platos[i].precio
+                menu_linea = f"  {Estilos.AMARILLO}[{i + 1}]{Estilos.NORMAL} {nombre:.<20} {Estilos.VERDE}${precio:.2f}{Estilos.NORMAL}"
+
+            pedido_linea = ""
+            if i < len(lineas_pedido):
+                pedido_linea = lineas_pedido[i]
+
+            espacios_relleno = ancho_menu - longitud_sin_ansi(menu_linea)
+            print(f"{menu_linea}{' '*espacios_relleno}{' '*separacion}{pedido_linea}")
+
+        print()
+        print(f"{Estilos.ROJO}[0]{Estilos.NORMAL} Finalizar pedido")
+        print("------------------------------")
+
