@@ -2,7 +2,6 @@ from collections import defaultdict
 import csv
 import os
 
-
 # Obtener la ruta base del proyecto
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE_DIR, 'data') # -> .../proyecto-restaurante/data/
