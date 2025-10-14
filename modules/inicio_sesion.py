@@ -1,9 +1,13 @@
 import csv
+import os
 from models.usuario_sesion import UsuarioSesion  # Asegúrate de que el path sea correcto
+
+ruta_base = os.path.dirname(__file__)
+ruta_csv = os.path.join(ruta_base, '..', 'data', 'usuarios.csv')
 
 def validar_usuario(usuario, contrasena):
     try:
-        with open('data/usuarios.csv', mode='r', encoding='utf-8') as archivo:
+        with open(ruta_csv, mode='r', encoding='utf-8') as archivo:
             lector = csv.reader(archivo)
             for fila in lector:
                 # Orden esperado: identificador, nombre, clave, correo, rol, estado
