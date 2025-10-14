@@ -1,7 +1,11 @@
-from views.menu_acceso import mostrar_menu_inicial
-from views.vista_reporte import vista_reporte
+# main.py
+import tkinter as tk
+from views.vista_principal import dibujar_pantalla_principal
 
-if __name__ == "__main__":
-    mostrar_menu_inicial()
-    #vista_reporte()
+def main():
+    root = tk.Tk()
+    dibujar_pantalla_principal(root)
+    root.mainloop()
 
+if __name__ == '__main__':
+    main()

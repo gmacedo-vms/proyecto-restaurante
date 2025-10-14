@@ -40,8 +40,9 @@ def dibujar_login(frame_destino):
     ).pack(pady=(10, 0))
 
 def procesar_login(usuario, clave):
-    print(f'{usuario}')
-    print(validar_usuario(usuario, clave))
+
+    if validar_usuario(usuario, clave):
+        print(validar_usuario(usuario, clave))
 
     print(f'Usuario: {usuario}, Clave: {clave}')
     # Aquí puedes agregar validación o navegación
