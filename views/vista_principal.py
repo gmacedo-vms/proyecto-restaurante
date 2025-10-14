@@ -1,46 +1,15 @@
-<<<<<<< HEAD
 import tkinter as tk
 from views.vista_inicio_sesion import dibujar_login
-=======
-from utils.styles import Estilos
-from utils.terminal import limpiar_consola_alt
-from modules.Menu import Menu
->>>>>>> 11ff92a17a0aa4e2f97262448bdf28c8f5b8b6ee
 
 # Crear ventana principal en pantalla completa
 root = tk.Tk()
 root.title('Sistema de Restaurante')
 root.configure(background='#e6f2ff')
 
-<<<<<<< HEAD
 # Obtener dimensiones de pantalla
 ancho_pantalla = root.winfo_screenwidth()
 alto_pantalla = root.winfo_screenheight()
 root.geometry(f'{ancho_pantalla}x{alto_pantalla}+0+0')
-=======
-    match opcion:
-        case '1':
-            limpiar_consola_alt()
-
-            menu_principal = Menu()
-            carrito_pedido = []
-            platos = menu_principal.get_platos()
-            while True:
-                menu_principal.mostrar_menu(carrito_pedido)
-
-                opcion = input(f"{Estilos.BLANCO}ELije una opcion: {Estilos.NORMAL}").strip()
-
-                if opcion == "0":
-                    break
-
-                if opcion != '0' and opcion.isnumeric():
-                    plato_elegido = platos[int(opcion) - 1]
-                    carrito_pedido.append(plato_elegido)
-                else:
-                    pass
-
-            limpiar_consola_alt()
->>>>>>> 11ff92a17a0aa4e2f97262448bdf28c8f5b8b6ee
 
 # 🧩 Frame superior para el título (pegado arriba)
 frame_titulo = tk.Frame(root, bg='#e6f2ff')
