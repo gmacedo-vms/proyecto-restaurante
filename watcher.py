@@ -4,7 +4,7 @@ import psutil
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
-APP_SCRIPT = "views/vista_principal.py"
+APP_SCRIPT = "main.py"
 
 def cerrar_instancia_anterior(nombre_script):
     for proc in psutil.process_iter(['pid', 'name', 'cmdline']):

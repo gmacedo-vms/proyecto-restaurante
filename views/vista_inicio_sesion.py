@@ -1,9 +1,13 @@
 import tkinter as tk
 from modules.inicio_sesion import validar_usuario
+from views.vista_mesero import dibujar_pantalla_mesero
+from views.vista_administrador import dibujar_pantalla_administrador
 
-def dibujar_login(frame_destino):
+def dibujar_login(frame_destino, root):
     for widget in frame_destino.winfo_children():
         widget.destroy()
+
+    root.lbl_subtitulo.config(text='Ingrese sus credenciales para continuar')
 
     # Frame contenedor del formulario centrado
     frame_login = tk.Frame(frame_destino, bg='#e6f2ff')
@@ -12,6 +16,15 @@ def dibujar_login(frame_destino):
     # Frame interno para centrar los widgets
     formulario = tk.Frame(frame_login, bg='#e6f2ff')
     formulario.pack()
+
+    # 🆕 Texto superior: "Ingrese sus credenciales"
+    tk.Label(
+        formulario,
+        text='Ingrese sus credenciales',
+        font=('Aptos', 16, 'bold'),
+        bg='#e6f2ff',
+        fg='#1a1a1a'
+    ).pack(pady=(0, 20))
 
     tk.Label(formulario, text='Usuario:', font=('Aptos', 14), bg='#e6f2ff',
              fg='#333333').pack(pady=(0, 5))
@@ -25,6 +38,12 @@ def dibujar_login(frame_destino):
                            bg='white', fg='#333333')
     clave_entry.pack(pady=(0, 10))
 
+    # 🔴 Label para mostrar errores
+    lbl_error = tk.Label(formulario, text='', font=('Aptos', 12), bg='#e6f2ff',
+                         fg='#E74C3C')
+    lbl_error.pack(pady=(5, 0))
+
+    # Botón de ingreso
     tk.Button(
         formulario,
         text='Ingresar',
@@ -36,13 +55,21 @@ def dibujar_login(frame_destino):
         relief='flat',
         bd=0,
         cursor='hand2',
-        command=lambda: procesar_login(usuario_entry.get(), clave_entry.get())
+        command=lambda: procesar_login(root, usuario_entry.get(), clave_entry.get(),
+                                       lbl_error)
     ).pack(pady=(10, 0))
 
-def procesar_login(usuario, clave):
 
-    if validar_usuario(usuario, clave):
-        print(validar_usuario(usuario, clave))
+def procesar_login(root, usuario, clave, lbl_error):
+    resultado = validar_usuario(usuario, clave)
 
-    print(f'Usuario: {usuario}, Clave: {clave}')
-    # Aquí puedes agregar validación o navegación
+    if not resultado:
+        lbl_error.config(text='Usuario o clave incorrectos')
+    if resultado.rol:
+        if resultado.rol == 'mesero':
+            dibujar_pantalla_mesero(root, resultado)
+        elif resultado.rol == 'admin':
+            dibujar_pantalla_administrador(root, resultado)
+        else:
+            lbl_error.config(text='Rol de usuario no reconocido')
+

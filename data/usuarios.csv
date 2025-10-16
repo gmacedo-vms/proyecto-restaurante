@@ -1,2 +1,7 @@
-identificador,nombre,clave,correo,rol,activo
-1,jmacedo,jmacedo123,jmacedo@gmail.com,admin,true
+identificador,nombre,apellidos,usuario,clave,correo,rol,rol_descripcion,activo
+1,Jairo Carlos, Macedo Chavarría,jmacedo,jmacedo123,jmacedo@gmail.com,admin,Administrador,true
+2,Renzo Brayan,Carranza Ortecho ,renzo,renzo123,renzo@gmail.com,admin,Administrador,true
+3,Carlos Abel,Silva Vazquez,carlos,carlos123,carlos@gmail.com,admin,Administrador,true
+4,Juan Felipe,Pendiente,juan,juan123,juan@gmail.com,admin,Administrador,true
+5,Walther Armando,Neciosup Ysique,juan,juan123,juan@gmail.com,admin,Administrador,true
+6,Sandro Marcelo,Rodriguez Castillo,sandro,sandro123,sandro@gmail.com,admin,Administrador,true

@@ -8,22 +8,23 @@ ruta_csv = os.path.join(ruta_base, '..', 'data', 'usuarios.csv')
 def validar_usuario(usuario, contrasena):
     try:
         with open(ruta_csv, mode='r', encoding='utf-8') as archivo:
-            lector = csv.reader(archivo)
+            lector = csv.DictReader(archivo)  # Usa encabezados como claves
             for fila in lector:
-                # Orden esperado: identificador, nombre, clave, correo, rol, estado
-                if fila[1] == usuario and fila[2] == contrasena:
+                if fila['usuario'] == usuario and fila['clave'] == contrasena:
                     return UsuarioSesion(
-                        identificador=int(fila[0]),
-                        nombre=fila[1],
-                        clave=fila[2],
-                        correo=fila[3],
-                        rol=fila[4],
-                        estado=fila[5]
+                        identificador=int(fila['identificador']),
+                        nombre=fila['nombre'],
+                        apellidos=fila['apellidos'],
+                        usuario=fila['usuario'],
+                        clave=fila['clave'],
+                        correo=fila['correo'],
+                        rol=fila['rol'],
+                        rol_descripcion=fila['rol_descripcion'],
+                        activo=fila['activo'].strip().lower() == 'true'
                     )
     except FileNotFoundError:
         print("⚠️ Archivo usuarios.csv no encontrado.")
     except Exception as e:
         print(f"⚠️ Error al validar usuario: {e}")
 
-    # Si no se encuentra el usuario, devuelve None
     return None
