@@ -1,7 +1,69 @@
 identificador,nombre,apellidos,usuario,clave,correo,rol,rol_descripcion,activo
-1,Jairo Carlos, Macedo Chavarría,jmacedo,jmacedo123,jmacedo@gmail.com,admin,Administrador,true
-2,Renzo Brayan,Carranza Ortecho ,renzo,renzo123,renzo@gmail.com,admin,Administrador,true
-3,Carlos Abel,Silva Vazquez,carlos,carlos123,carlos@gmail.com,admin,Administrador,true
-4,Juan Felipe,Pendiente,juan,juan123,juan@gmail.com,admin,Administrador,true
-5,Walther Armando,Neciosup Ysique,juan,juan123,juan@gmail.com,admin,Administrador,true
-6,Sandro Marcelo,Rodriguez Castillo,sandro,sandro123,sandro@gmail.com,admin,Administrador,true
+00000001,Jairo Carlos,Macedo Chavarría,jmacedo,jmacedo123,jmacedo@gmail.com,admin,Administrador,true
+00000002,Renzo Brayan,Carranza Ortecho,renzo,renzo123,renzo@gmail.com,admin,Administrador,true
+00000003,Carlos Abel,Silva Vazquez,carlos,carlos123,carlos@gmail.com,admin,Administrador,true
+00000004,Juan Felipe,Pendiente,juan,juan123,juan@gmail.com,admin,Administrador,true
+00000005,Walther Armando,Neciosup Ysique,juan,juan123,juan@gmail.com,admin,Administrador,true
+00000006,Sandro Marcelo,Rodriguez Castillo,sandro,sandro123,sandro@gmail.com,admin,Administrador,true
+00000007,Ana Lucía,Ramos Delgado,ana,ana123,ana@gmail.com,mesero,Mesero,true
+00000008,José Luis,Torres Quispe,joseluis,jl123,joseluis@gmail.com,mesero,Mesero,true
+00000009,María Fernanda,Lozano Paredes,mfernanda,mf123,mfernanda@gmail.com,mesero,Mesero,true
+00000010,Diego Armando,Reyes Salazar,diego,diego123,diego@gmail.com,mesero,Mesero,true
+00000011,Lucía Beatriz,Huamán Rojas,lucia,lucia123,lucia@gmail.com,mesero,Mesero,true
+00000012,Pedro Miguel,Valverde Peña,pedro,pedro123,pedro@gmail.com,mesero,Mesero,true
+00000013,Carla Patricia,Espinoza Díaz,carla,carla123,carla@gmail.com,mesero,Mesero,true
+00000014,Andrés Felipe,Castro León,andres,andres123,andres@gmail.com,mesero,Mesero,true
+00000015,Valeria Sofía,Mejía Torres,valeria,valeria123,valeria@gmail.com,mesero,Mesero,true
+00000016,Juan Manuel,Ortega Ruiz,juanma,juanma123,juanma@gmail.com,mesero,Mesero,true
+00000017,Daniela Paola,Chávez Mendoza,daniela,daniela123,daniela@gmail.com,mesero,Mesero,true
+00000018,Marco Antonio,Salinas Bravo,marco,marco123,marco@gmail.com,mesero,Mesero,false
+00000019,Fiorella Isabel,Quispe Ramos,fiorella,fiorella123,fiorella@gmail.com,mesero,Mesero,false
+00000020,Esteban Javier,Romero Cárdenas,esteban,esteban123,esteban@gmail.com,mesero,Mesero,true
+00000021,Paola Andrea,Delgado Núñez,paola,paola123,paola@gmail.com,mesero,Mesero,true
+00000022,Alonso Gabriel,Martínez Rivas,alonso,alonso123,alonso@gmail.com,mesero,Mesero,true
+00000023,Melanie Roxana,Silva Torres,melanie,melanie123,melanie@gmail.com,mesero,Mesero,true
+00000024,Bruno Rafael,Chávez López,bruno,bruno123,bruno@gmail.com,mesero,Mesero,true
+00000025,Jimena Alejandra,Reynoso Díaz,jimena,jimena123,jimena@gmail.com,mesero,Mesero,true
+00000026,Fabrizio Nicolás,Huerta Salazar,fabrizio,fabrizio123,fabrizio@gmail.com,mesero,Mesero,true
+00000027,Isabel Cristina,Montoya León,isabel,isabel123,isabel@gmail.com,mesero,Mesero,true
+00000028,Martín Eduardo,Peña Vargas,martin,martin123,martin@gmail.com,mesero,Mesero,true
+00000029,Patricia Elena,Aguilar Ríos,patricia,patricia123,patricia@gmail.com,mesero,Mesero,true
+00000030,Raúl Esteban,Fuentes Chávez,raul,raul123,raul@gmail.com,mesero,Mesero,true
+00000031,Vanessa Milagros,Reyes Paredes,vanessa,vanessa123,vanessa@gmail.com,mesero,Mesero,true
+00000032,Ignacio Tomás,Delgado Romero,ignacio,ignacio123,ignacio@gmail.com,mesero,Mesero,true
+00000033,Florencia María,Salazar Quispe,florencia,florencia123,florencia@gmail.com,mesero,Mesero,true
+00000034,Álvaro Enrique,Lozano Díaz,alvaro,alvaro123,alvaro@gmail.com,mesero,Mesero,true
+00000035,Milagros Teresa,Valenzuela Ruiz,milagros,milagros123,milagros@gmail.com,mesero,Mesero,true
+00000036,Emilio Sebastián,Ortecho Carranza,emilio,emilio123,emilio@gmail.com,mesero,Mesero,true
+00000037,Laura Beatriz,Gonzales Ríos,laura,laura123,laura@gmail.com,mesero,Mesero,true
+00000038,Kevin Andrés,Salazar Huamán,kevin,kevin123,kevin@gmail.com,mesero,Mesero,true
+00000039,Andrea Paola,Reyes Quispe,andrea,andrea123,andrea@gmail.com,mesero,Mesero,true
+00000040,Matías Eduardo,Torres Delgado,matias,matias123,matias@gmail.com,mesero,Mesero,true
+00000041,Luciana Isabel,Peña Chávez,luciana,luciana123,luciana@gmail.com,mesero,Mesero,true
+00000042,Diego Sebastián,Montoya Rivas,sebastian,sebastian123,sebastian@gmail.com,mesero,Mesero,true
+00000043,Valentina Sofía,Romero Díaz,valentina,valentina123,valentina@gmail.com,mesero,Mesero,true
+00000044,Thiago Nicolás,Aguilar Bravo,thiago,thiago123,thiago@gmail.com,mesero,Mesero,true
+00000045,Jimena Alejandra,Silva León,jimena2,jimena2123,jimena2@gmail.com,mesero,Mesero,true
+00000046,Emilio Gabriel,Chávez Torres,emilio2,emilio2123,emilio2@gmail.com,mesero,Mesero,true
+00000047,Isabella María,Delgado Salazar,isabella,isabella123,isabella@gmail.com,mesero,Mesero,true
+00000048,Bruno Rafael,Ramos Quispe,bruno2,bruno2123,bruno2@gmail.com,mesero,Mesero,true
+00000049,Florencia Elena,Valverde Núñez,florencia2,florencia2123,florencia2@gmail.com,cliente,Cliente,true
+00000050,Álvaro Tomás,Huerta Mendoza,alvaro2,alvaro2123,alvaro2@gmail.com,cliente,Cliente,true
+00000051,Milagros Beatriz,Ortecho Cárdenas,milagros2,milagros2123,milagros2@gmail.com,cliente,Cliente,true
+00000052,Ignacio Javier,Reynoso Paredes,ignacio2,ignacio2123,ignacio2@gmail.com,cliente,Cliente,true
+00000053,Vanessa Teresa,Salinas Romero,vanessa2,vanessa2123,vanessa2@gmail.com,cliente,Cliente,true
+00000054,Martín Alejandro,Fuentes Díaz,martin2,martin2123,martin2@gmail.com,cliente,Cliente,true
+00000055,Patricia Lucía,Mejía Ríos,patricia2,patricia2123,patricia2@gmail.com,cliente,Cliente,true
+00000056,Raúl Enrique,Castro Torres,raul2,raul2123,raul2@gmail.com,cliente,Cliente,true
+00000057,Melanie Roxana,Chávez León,melanie2,melanie2123,melanie2@gmail.com,cliente,Cliente,true
+00000058,Fabrizio Nicolás,Romero Bravo,fabrizio2,fabrizio2123,fabrizio2@gmail.com,cliente,Cliente,true
+00000059,Isabel Cristina,Valenzuela Rivas,isabel2,isabel2123,isabel2@gmail.com,cliente,Cliente,true
+00000060,Esteban Javier,Delgado Díaz,esteban2,esteban2123,esteban2@gmail.com,cliente,Cliente,true
+111,111,111,111,111,111,cliente,Cliente del restaurante,True
+222,22,222,222,22,22,cliente,Cliente del restaurante,True
+44,44,44,44,44,44,cliente,Cliente del restaurante,True
+55,55,55,55,55,55,cliente,Cliente del restaurante,True
+55,55,55,55,55,556,cliente,Cliente del restaurante,True
+121212,1212212,12121212,2121212,2121212,1212121212,cliente,Cliente del restaurante,True
+a,a,a,a,a,a,cliente,Cliente del restaurante,True
+12345678,Alberto Jesus,Carranza Sanchez,alberto01,123456,alberto@gmail.com,cliente,Cliente del restaurante,True

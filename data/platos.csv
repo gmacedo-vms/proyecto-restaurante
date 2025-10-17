@@ -1,2 +1,64 @@
-identificador,nombre,descripcion,precio
-1,Spaghetti a la Carbonara,Spaghetti con salsa de huevo,12.50
+identificador,nombre,descripcion,precio,activo
+P0001,Spaghetti a la Carbonara,Spaghetti con salsa de huevo,12.50,true
+P0002,Lomo Saltado,Trozos de carne salteados con cebolla y tomate,15.00,true
+P0003,Ají de Gallina,Guiso cremoso de pollo con ají amarillo,13.50,true
+P0004,Ceviche Clásico,Pescado marinado en limón con cebolla y ají,14.00,true
+P0005,Tallarines Verdes,Tallarines con salsa de albahaca y queso,11.50,true
+P0006,Arroz Chaufa,Arroz frito con pollo huevo y cebolla china,12.00,true
+P0007,Pollo a la Brasa,Pollo asado con papas fritas y ensalada,16.00,true
+P0008,Anticuchos,Cortes de corazón de res a la parrilla,10.00,true
+P0009,Papa a la Huancaína,Papas sancochadas con salsa de ají amarillo,9.50,true
+P0010,Ocopa Arequipeña,Papas con salsa de huacatay y queso,9.50,true
+P0011,Chicharrón de Cerdo,Cerdo crocante con mote y salsa criolla,14.50,false
+P0012,Seco de Res,Carne guisada con culantro y arroz,13.00,false
+P0013,Escabeche de Pescado,Pescado en salsa de vinagre con cebolla y ají,12.50,true
+P0014,Tacu Tacu,Frejoles y arroz fritos con huevo y plátano,11.00,true
+P0015,Sopa Criolla,Sopa con carne fideos y leche,10.50,true
+P0016,Caldo de Gallina,Sopa concentrada con gallina y huevo duro,12.00,true
+P0017,Ensalada Rusa,Papas zanahorias y arvejas con mayonesa,8.00,true
+P0018,Arroz con Pollo,Arroz verde con presa de pollo y salsa criolla,12.00,true
+P0019,Pollo al Oregano,Pollo al horno con papas y orégano,13.00,true
+P0020,Chupe de Camarones,Sopa cremosa con camarones y leche,16.50,true
+P0021,Carapulcra,Guiso de papa seca con cerdo y maní,13.50,true
+P0022,Cau Cau,Estofado de mondongo con papa y arroz,11.50,true
+P0023,Chanfainita,Guiso de bofe con papa y ají panca,11.00,true
+P0024,Arroz Tapado,Arroz relleno con carne molida y huevo,10.50,true
+P0025,Pastel de Papa,Papas horneadas con carne y queso,12.00,true
+P0026,Lasagna de Carne,Pasta horneada con carne y salsa bechamel,14.00,true
+P0027,Ensalada César,Lechuga con pollo crutones y aderezo César,10.00,true
+P0028,Filete de Pescado,Pescado frito con arroz y ensalada,13.00,true
+P0029,Pollo al Curry,Pollo en salsa de curry con arroz blanco,14.00,true
+P0030,Crema de Zapallo,Sopa cremosa de zapallo y queso,9.00,true
+P0031,Crema de Espárragos,Sopa suave de espárragos y leche,9.00,true
+P0032,Crema de Pollo,Sopa cremosa de pollo y verduras,9.50,true
+P0033,Chaufa de Mariscos,Arroz frito con mariscos y salsa de soya,15.00,true
+P0034,Arroz con Mariscos,Arroz rojo con mariscos y salsa criolla,15.50,true
+P0035,Pollo al Vino,Pollo guisado en vino tinto con papas,14.50,true
+P0036,Estofado de Pollo,Pollo guisado con verduras y arroz,13.00,true
+P0037,Estofado de Res,Carne guisada con papas y zanahorias,13.50,true
+P0038,Ensalada Mixta,Lechuga tomate zanahoria y palta,8.50,true
+P0039,Pan con Chicharrón,Pan con cerdo crocante y salsa criolla,9.00,true
+P0040,Pan con Jamón del País,Pan con jamón casero y salsa criolla,9.00,true
+P0041,Pan con Lomito,Pan con lomo saltado y papas,10.00,true
+P0042,Pan con Pollo,Pan con pollo deshilachado y mayonesa,8.50,true
+P0043,Pan con Hamburguesa,Hamburguesa casera con papas y ensalada,11.00,true
+P0044,Pan con Salchicha,Salchicha frita con papas y salsa,9.00,true
+P0045,Pan con Huevo,Huevo frito con tomate y cebolla,8.00,true
+P0046,Empanada de Pollo,Masa rellena de pollo y aceituna,4.50,true
+P0047,Empanada de Carne,Masa rellena de carne y huevo,4.50,true
+P0048,Empanada de Queso,Masa rellena de queso fresco,4.00,true
+P0049,Tequeños,Queso envuelto en masa frita,6.00,true
+P0050,Salchipapas,Papas fritas con salchicha y salsas,9.00,true
+P0051,Pollo Broaster,Pollo frito crocante con papas,13.00,true
+P0052,Pollo Guisado,Pollo en salsa roja con arroz,12.50,true
+P0053,Pollo al Horno,Pollo horneado con papas doradas,13.50,true
+P0054,Pollo con Tallarines,Pollo salteado con fideos,12.00,false
+P0055,Pollo con Puré,Pollo a la plancha con puré de papa,11.50,false
+P0056,Pollo con Ensalada,Pollo a la plancha con ensalada fresca,11.00,false
+P0057,Pollo con Arroz,Pollo frito con arroz blanco,11.50,true
+P0058,Pollo con Papas,Pollo frito con papas fritas,12.00,true
+P0059,Pollo con Menestra,Pollo guisado con lentejas y arroz,12.50,true
+P0060,Pollo con Frijoles,Pollo guisado con frijoles y arroz,12.50,true
+P0061,Pollo con Tallarines Verdes,Pollo frito con tallarines de albahaca,13.00,true
+P0062,Plato,Plato,34,true
+P0063,Plato de prueba,Plato de prueba,12,true

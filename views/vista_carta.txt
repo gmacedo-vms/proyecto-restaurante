@@ -4,6 +4,7 @@ from tkinter import Toplevel, Label, Button, messagebox
 
 from modules.platos import listar_platos
 from modules.pedidos import guardar_pedido
+from views.vista_principal import dibujar_pantalla_principal
 
 def restablecer_seleccion(tabla, estado_seleccion):
     for item in tabla.get_children():
@@ -118,9 +119,9 @@ def dibujar_vista_carta(root, usuario):
              "white"),
             ("Reportes", lambda: print("Reportes"), "#E67E22", "#D35400", "white"),
             ("Promociones", lambda: print("Promociones"), "#8E44AD", "#9B59B6",
-             "white")
-            # ("Cerrar sesión", lambda: dibujar_pantalla_principal(root), "#C0392B",
-            #  "#E74C3C", "white")  # 🔴 Botón adicional
+             "white"),
+            ("Cerrar sesión", lambda: dibujar_pantalla_principal(root), "#C0392B",
+             "#E74C3C", "white")  # 🔴 Botón adicional
         ]
 
         for texto, accion, color_bg, color_active, color_fg in botones:
